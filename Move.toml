@@ -1,8 +1,17 @@
 [package]
-name = 'SuiHub-DecentralizedGamingForum'
+name = 'suihub'
 authors = ["Mo Ashouri <ashourics@gmail.com>"]
+
+
+[package]
+name = 'suihub'
 version = '1.0.0'
-[dependencies.AptosFramework]
-git = 'https://github.com/aptos-labs/aptos-core.git'
-rev = 'main'
-subdir = 'aptos-move/framework/aptos-framework'
+authors = ["Mohammadreza Ashouri <ashourics@gmail.com>"] 
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework", rev = "testnet" }
+
+[addresses]
+suihub = "0x0"
+
+
